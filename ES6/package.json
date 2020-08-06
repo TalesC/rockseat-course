@@ -3,20 +3,24 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
-  "dependencies": {
+  "devDependencies": {
     "@babel/cli": "^7.10.4",
     "@babel/core": "^7.10.4",
     "@babel/plugin-proposal-object-rest-spread": "^7.10.4",
-    "@babel/preset-env": "^7.10.4"
+    "@babel/preset-env": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
   },
   "scripts": {
-    "dev": "babel ./main.js -o ./bundle.js -w",
-    "dev2": "babel ./main2.js -o ./bundle2.js -w",
-    "dev3": "babel ./main3.js -o ./bundle3.js -w",
-    "dev4": "babel ./main4.js -o ./bundle4.js -w",
-    "dev5": "babel ./main5.js -o ./bundle5.js -w",
-    "dev6": "babel ./main6.js -o ./bundle6.js -w",
-    "dev7": "babel ./main7.js -o ./bundle7.js -w",
-    "dev8": "babel ./main8.js -o ./bundle8.js -w"
+    "dev": "webpack --mode=development -w",
+    "basic-config": "babel ./basics/main1.js -o ./basics/bundle1.js -w",
+    "basic-classes": "babel ./basics/main2.js -o ./basics/bundle2.js -w",
+    "basic-const-let": "babel ./basics/main3.js -o ./basics/bundle3.js -w",
+    "basic-array": "babel ./basics/main4.js -o ./basics/bundle4.js -w",
+    "basic-arrow": "babel ./basics/main5.js -o ./basics/bundle5.js -w",
+    "basic-desestrut": "babel ./basics/main6.js -o ./basics/bundle6.js -w",
+    "basic-rest-spread": "babel ./basics/main7.js -o ./basics/bundle7.js -w",
+    "basic-template-literals": "babel ./basics/main8.js -o ./basics/bundle8.js -w"
   }
 }
