@@ -1,5 +1,5 @@
 {
-  "name": "ES6",
+  "name": "es6",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
@@ -7,6 +7,8 @@
     "@babel/cli": "^7.10.4",
     "@babel/core": "^7.10.4",
     "@babel/plugin-proposal-object-rest-spread": "^7.10.4",
+    "@babel/plugin-transform-async-to-generator": "^7.10.4",
+    "@babel/polyfill": "^7.10.4",
     "@babel/preset-env": "^7.10.4",
     "babel-loader": "^8.1.0",
     "webpack": "^4.44.1",
@@ -24,5 +26,8 @@
     "basic-desestrut": "babel ./basics/main6.js -o ./basics/bundle6.js -w",
     "basic-rest-spread": "babel ./basics/main7.js -o ./basics/bundle7.js -w",
     "basic-template-literals": "babel ./basics/main8.js -o ./basics/bundle8.js -w"
+  },
+  "dependencies": {
+    "axios": "^0.19.2"
   }
 }
