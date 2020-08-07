@@ -25,7 +25,9 @@
     "basic-arrow": "babel ./basics/main5.js -o ./basics/bundle5.js -w",
     "basic-desestrut": "babel ./basics/main6.js -o ./basics/bundle6.js -w",
     "basic-rest-spread": "babel ./basics/main7.js -o ./basics/bundle7.js -w",
-    "basic-template-literals": "babel ./basics/main8.js -o ./basics/bundle8.js -w"
+    "basic-template-literals": "babel ./basics/main8.js -o ./basics/bundle8.js -w",
+    "async-await": "babel ./async_await/main_async_await.js -o ./async_await/bundle_async_await.js -w"
+
   },
   "dependencies": {
     "axios": "^0.19.2"
