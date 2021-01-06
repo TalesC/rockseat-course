@@ -29,6 +29,6 @@
     "async-await": "babel ./async_await/main_async_await.js -o ./async_await/bundle_async_await.js -w"
   },
   "dependencies": {
-    "axios": "^0.19.2"
+    "axios": "^0.21.1"
   }
 }
